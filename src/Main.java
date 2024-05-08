@@ -1,20 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        int x = 100, y = 200;
+        int num = 29;
+        boolean flag = false;
+        for (int i = 2; i <= num / 2; ++i) {
+            // condition for nonprime number
+            if (num % i == 0) {
+                flag = true;
+                break;
+            }
+        }
 
-        System.out.println("Before Swap");
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
+        if (!flag)
+            System.out.println(num + " is a prime number.");
+        else
+            System.out.println(num + " is not a prime number.");}
 
-        // Swapping using three
-        // Variables
-        int temp = x;
-        x = y;
-        y = temp;
-
-        System.out.println("After swap");
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
-
-    }
 }
