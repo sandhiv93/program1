@@ -1,18 +1,13 @@
-import java.util.Scanner;
-class seriorcitizen{
-    public static void main(String args[])
-    {
-        int age;
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the age of the person");
-        age=sc.nextInt();
-        if(age>=60)
-        {
-            System.out.println("The person is senior citizen");
+public class Main {
+    public static void main(String[] args) {
+        int count = 0, num = 0003452;
+
+        while (num != 0) {
+            // num = num/10
+            num /= 10;
+            ++count;
         }
-        else
-        {
-            System.out.println("The person not is senior citizen");
-        }
+
+        System.out.println("Number of digits: " + count);
     }
 }
